@@ -14459,6 +14459,29 @@ a.badge{
     position:relative;
     z-index:0
 }
+.video-container {
+    height: 300px;
+    width: 300px;
+    position: relative;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Just styling the content of the div, the *magic* in the previous rules */
+.video-container .caption {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  color: #dc0000;
+  padding: 10px;
+}
+
 .jarallax .jarallax-img{
     position:absolute;
     top:0;
@@ -14468,6 +14491,7 @@ a.badge{
     z-index:-1;
     background-position:center;
     background-size:cover
+    
 }
 [data-disable-parallax-down=xs]{
     transform:none !important;
@@ -15833,6 +15857,7 @@ img-comparison-slider:focus{
 .dark-mode .ct-label{
     color:rgba(255,255,255,.5)
 }
+
 .dark-mode .leaflet-popup-content-wrapper,.dark-mode .leaflet-popup-tip{
     background:#121519
 }
@@ -15852,6 +15877,18 @@ img-comparison-slider:focus{
 }
 .dark-mode .fc-list-day-cushion{
     background-color:#121519
+}
+
+.dark-mode .dark-mode-img
+{
+    max-width: 50px; max-height: 100%;
+    display: flex;
+}
+.dark-mode .light-mode-img{
+height: 1px;
+width: 1px;
+visibility: hidden;
+
 }
 /*# sourceMappingURL=theme.min.css.map */
  
